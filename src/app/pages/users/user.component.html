@@ -1,0 +1,13 @@
+<div class="container center-container">
+    <div class="row center-row">
+        <div class="title-text">Usuarios</div>
+        <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let usuario of usuarios.data">
+            <div class="card bg-white card-hover" (click)="goToDescription(usuario.id)">
+                <img [src]="usuario.avatar" class="card-img-top">
+                <div class="card-body">
+                    <p class="name-text">{{usuario.first_name}} {{usuario.last_name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
